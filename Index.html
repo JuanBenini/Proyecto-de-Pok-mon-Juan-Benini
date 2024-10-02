@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex de Juan</h1>
+        <input type="text" id="buscar" placeholder="Buscar por nombre o ID">
+        <button id="mostrar-favoritos-btn">Mostrar Favoritos</button>
+    </header>
+
+    <main>
+        <div id="lista-pokemon"></div>
+    </main>
+
+    <!-- Modal para mostrar detalles de los Pokémon -->
+    <div id="modal-pokemon" class="modal">
+        <div class="contenido-modal">
+            <span class="cerrar" id="cerrar-modal">&times;</span>
+            <h2 id="titulo-modal"></h2>
+            <img id="imagen-modal" src="" alt="">
+            <p><strong>Altura:</strong> <span id="altura-modal"></span></p>
+            <p><strong>Peso:</strong> <span id="peso-modal"></span></p>
+            <p><strong>Habilidades:</strong> <span id="habilidades-modal"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
